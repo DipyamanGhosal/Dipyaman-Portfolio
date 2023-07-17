@@ -49,13 +49,34 @@
         <!-- Logo End -->
       
         <!-- Navbar -->
-        <nav class="navbar" style="position: absolute; top: 50%; right: 70px; transform: translateY(-50%);">
-          <a href="#home">home</a>
-          <a href="#about">about</a>
-          <a href="#qualifications">resume</a>
-          <a href="#service">service</a>
-          <a href="#contact">contact</a>
-        </nav>
+        <style>
+            .navbar {
+              position: absolute;
+              top: 50%;
+              right: 70px;
+              transform: translateY(-50%);
+            }
+          
+            @media (max-width: 768px) {
+              .navbar {
+                position: static;
+                transform: none;
+                text-align: center;
+              }
+            }
+          
+            .navbar a {
+              margin-right: 10px;
+            }
+          </style>
+          
+          <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#qualifications">resume</a>
+            <a href="#service">service</a>
+            <a href="#contact">contact</a>
+          </nav>
       </header>
       
           
